@@ -1,0 +1,1 @@
+1. Why didn’t we create two different classes for Black piece and White piece?

@@ -1,0 +1,2 @@
+1.Can we create three different classes to classify the completed matches (CompletedMatch), upcoming matches (UpcomingMatch) and current matches (CurrentMatch)?
+2.If we want our app to display latest news on cricket. How will our new object oriented model looks like? Draw the class diagram for the same.

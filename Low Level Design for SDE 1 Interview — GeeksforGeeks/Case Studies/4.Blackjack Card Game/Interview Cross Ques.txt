@@ -1,0 +1,5 @@
+1.A Double down in blackjack is when you double your original wager after receiving your first two cards. Once the cards have been dealt, you will be given the option to double down if the rules permit. If you win this double down bet you will collect double your original wager.
+2.What changes do we need to make in our model, to adapt Double Down feature.
+3.In casino’s the game Blackjack is generally played using four, six, or eight decks. After being shuffled, the cards are placed in a receptacle called a shoe, from which the dealer can slide out one card at a time.
+4.What will be our updated class diagram for blackjack that uses multiple decks (shoe) of cards?5.
+5.We have discussed the game of single player. Can you give a try, how will our class diagram look like, if the game supports multiple players with maximum limit of 5 players.

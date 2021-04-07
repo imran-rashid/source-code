@@ -1,0 +1,3 @@
+1.How we need to modify our system for Multiple Entry and Single Exit Parking Lot.
+2.In our case study we have considered all the parking spots as similar. Suppose our parking offers different types of parking for different types of vehicles. How can we change our model to adapt different types of parking spots depending on different types of vehicles?
+3.Can we use the discussed model for Multi-Level (multiple floor) parking system? If not, what changes do we need to make?

@@ -1,0 +1,3 @@
+1.How can we implement Filters on the search page?
+2.In myFlipCart, we have assumed that a product is available with single seller, what changes do we need to make, if multiple sellers can sell the same product?
+3.What new classes needs to be added, if we want to support product variation. For example, there can be T-shirt available in different sizes (Small, Medium, Large and Extra-Large).

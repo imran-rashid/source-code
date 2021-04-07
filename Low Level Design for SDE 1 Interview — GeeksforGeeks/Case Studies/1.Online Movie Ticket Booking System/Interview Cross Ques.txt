@@ -1,0 +1,5 @@
+1.What changes do we need to make to support Multi-screen theaters?
+2.How will you handle concurrent seat selection in the app?
+3.Suppose we want our app to support movies in 5 languages English, Hindi, Tamil, Gujarati, and Malayalam. How do we achieve it in our current model?
+
+4.How can we support location based search of theaters in our app?
