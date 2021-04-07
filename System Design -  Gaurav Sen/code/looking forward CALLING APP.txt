@@ -1,0 +1,9 @@
+Our first attempt at designing a calling app has some issues:
+
+1) We jumped at a solution very quickly. This is a common problem in interviews. Instead of building and communicating our ideas, we are anxious to note them on the board.
+
+2) The explanation isn't in as much depth as we'd like. Although this level of depth is fine for an interview, we'd like to know more.
+
+3) The architecture is quite generic. Not a lot of problems specific to calling have been discussed.
+
+In a few weeks, we shall see a different approach to designing the app. These lessons will tackle the issues mentioned above. Stay tuned!

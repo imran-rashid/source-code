@@ -1,0 +1,103 @@
+
+GateWay:
+
+EmptyResponse blockIpAddress(IP address, Endpoint endpoints[], Duration duration)
+
+
+
+Service Registry:
+
+EmptyResponse register(Service service, IpAddress[] ipAddresses,  Endpoint endpoints[])
+ServiceNode routeRequest(Service service, Request request, Endpoint apiEndPoint, User user) throws ThrottleException
+
+
+
+Contract Registry
+
+EmptyResponse register(Service service, Contract contract)
+
+A Contract object contains (ApiDefinition[] ApiDefinitions, String version).
+
+
+
+SMS service:
+
+EmptyResponse sendSMS(Service sendingService, User receiver, Template smsTemplate, Map<String, String> smsParams)
+
+
+
+Auth service:
+
+EmptyResponse register(String username, String password, PhoneNumber phoneNumber)
+EmptyResponse login(String username, String password)
+TokenResponse verify(String username, String otp)
+authenticate(String username, String token)
+EmptyResponse logout(String username, String token)
+
+
+
+Profile Service:
+
+EmptyResponse createProfile(String username, String token, String photoUrl, Date DOB, String Gender)
+EmptyResponse updateProfile(Profile profile, String username, String token)
+EmptyResponse deleteProfile(Profile profile, String username, String token)
+Profile getProfile(String username, String token)
+
+
+
+Drive Service: (CRUD)
+
+EmptyResponse upload(File file, Directory driveDirectory, Actor uploader, AccessControlList acl)
+File getFile(File file, Directory driveDirectory, Actor requestingActor)
+File[] getFile(String fileNameRegex, User user, Actor requestingActor)
+EmptyResponse delete(File file, Directory driveDirectory)
+
+
+
+User Preference Store: 
+
+EmptyResponse setEmailPreferences(String username, EmailPreferences preferences)
+EmptyResponse setLayoutPreferences(String username, LayoutPreferences preferences)
+EmailPreferences getEmailPreferences(String username, String preferenceList[])
+LayoutPreferences getLayoutPreferences(String username, String preferenceList[])
+Tag[] setTags(Email email)
+
+Cron Jobs:
+EmptyResponse updateEmailTags(User user) 
+
+
+
+Contacts Manager:
+
+EmptyResponse makeMutualContact(User sender, User receiver)
+Group registerGroup(User creator, UserWithRole[] members, String name, String photoUrl)
+Role is an enum with possible values: Creator, Admin, Member, Guest
+
+User[] getMembersWithRoles(String groupId, Role[] roles)
+EmptyResponse removeContact(User requester, User contact)
+EmptyResponse addMembers(User requester, UserWithRole[] members)
+EmptyResponse removeMembers(User requester, User[] members)
+EmptyResponse updateGroup(User requester, String name, String photoUrl)
+EmptyResponse deleteGroup(User requester, String groupId)
+
+
+
+Email Store:
+
+Email sendEmail(User sender, User receiver, Email email, Attachment[] attachments)
+EmptyResponse updateEmailTags(User requester, String idOfEmail, Tag tags[])
+EmptyResponse deleteEmailFor(User requester, String idOfEmail)
+Email[] getEmailsFor(User receiver)
+Attachment[] getEmailAttachments(String idOfEmail)
+
+
+
+Search Engine:
+
+Email[] searchEmails(SearchParams params)
+SearchParams -> (User sender, User receiver, String regex, Date sentBefore, Date sentAfter, Tag[] tags)
+
+
+MARK INCOMPLETE
+
+CONTINUE

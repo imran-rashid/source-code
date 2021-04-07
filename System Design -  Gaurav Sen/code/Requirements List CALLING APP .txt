@@ -1,0 +1,11 @@
+This is our first attempt at designing a calling app. 
+
+The features are listed below:
+
+Users can call each other over VOIP or PSTN
+
+Call Routing
+
+Charge user for making calls
+
+Choose a provider for each call
